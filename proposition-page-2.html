@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 | Proposition</title>
+
+    <style>
+        /**
+        =================================================
+        import google fonts
+        =================================================
+        +*/
+
+        @font-face {
+            font-family: "Oakes Grotesk Regular";
+            src: url("fonts/oakes_grotesk/Oakes-Grotesk-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Medium";
+            src: url("fonts/oakes_grotesk/Oakes-Grotesk-Medium.ttf") format("truetype");
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Bold";
+            src: url("fonts/oakes_grotesk/Oakes-Grotesk-Bold.ttf") format("truetype");
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Semi Bold";
+            src: url("fonts/oakes_grotesk/Oakes-Grotesk-SemiBold.ttf") format("truetype");
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        :root {
+            --bi-primary: #043590;
+            --bi-primary-rgb: 4, 53, 144;
+            --bi-primary-light: #5791ff;
+            --bi-primary-light-rgb: 87, 145, 255;
+            --bi-primary-dark: #042C78;
+            --bi-primary-dark-rgb: 4, 44, 120;
+            --bi-black-default: #000;
+            --bi-black-default-rgb: 0, 0, 0;
+            --bi-white-default: #fff;
+            --bi-white-default-rgb: 255, 255, 255;
+            --bi-black: #181818;
+            --bi-black-rgb: 24, 24, 24;
+            --bi-success: #00AD5A;
+            --bi-success-rgb: 0, 173, 90;
+            --bi-gray-1: #7E7E7E;
+            --bi-gray-1-rgb: 126, 126, 126;
+            --bi-gray-2: #8A8A8A;
+            --bi-gray-2-rgb: 138, 138, 138;
+            --bi-gray-3: #636363;
+            --bi-gray-3-rgb: 99, 99, 99;
+            --bi-grey: #E8E8E8;
+            --bi-grey-rgb: 232, 232, 232;
+            --bi-alert: #AD0000;
+            --bi-alert-rgb: 173, 0, 0;
+            --bi-alert-dark: #750909;
+            --bi-alert-dark-rgb: 117, 9, 9;
+            --bi-cross-hover: #F5F5F5;
+            --bi-cross-active: #E8E8E9;
+            --bi-font-family-oakes-grotesk-regular: "Oakes Grotesk Regular", "sans-serif";
+            --bi-font-family-oakes-grotesk-medium: "Oakes Grotesk Medium", "sans-serif";
+            --bi-font-family-oakes-grotesk-bold: "Oakes Grotesk Bold", "sans-serif";
+            --bi-font-family-oakes-grotesk-semi-bold: "Oakes Grotesk Semi Bold", "sans-serif";
+        }
+
+        /**
+        =================================================
+        Margin And Padding Style Begin
+        =================================================
+        +*/
+
+        .bi-m-x20px-y {
+            margin: 20px 0;
+        }
+
+        .bi-m-x-y20px {
+            margin: 0 20px;
+        }
+
+
+        .bi-mb-25px {
+            margin-bottom: 25px;
+        }
+
+        .bi-mb-0 {
+            margin-bottom: 0;
+        }
+
+        .bi-mb-0_25rem {
+            margin-bottom: 0.25rem;
+        }
+
+        .bi-mb-0_5rem {
+            margin-bottom: 0.5rem;
+        }
+
+        .bi-mb-0_875rem {
+            margin-bottom: 0.875rem;
+        }
+
+        .bi-mb-1_125rem {
+            margin-bottom: 1.125rem;
+        }
+
+        .bi-mb-1_25rem {
+            margin-bottom: 1.25rem;
+        }
+
+        .bi-mb-1rem {
+            margin-bottom: 1rem;
+        }
+
+        .bi-mb-1_75rem {
+            margin-bottom: 1.75rem;
+        }
+
+        .bi-mb-2rem {
+            margin-bottom: 2rem;
+        }
+
+        .bi-mb-2_125rem {
+            margin-bottom: 2.125rem;
+        }
+
+        .bi-mb-2_5rem {
+            margin-bottom: 2.5rem;
+        }
+
+        .bi-mb-3_125rem {
+            margin-bottom: 3.125rem;
+        }
+
+        .bi-mb-4_375rem {
+            margin-bottom: 4.375rem;
+        }
+
+        .bi-mb-4_5rem {
+            margin-bottom: 4.5rem;
+        }
+
+        .bi-mb-4_5remi {
+            margin-bottom: 4.5rem !important;
+        }
+
+        .bi-mb-5_25rem {
+            margin-bottom: 5.25rem;
+        }
+
+        .bi-mb-5rem {
+            margin-bottom: 5rem;
+        }
+
+        .bi-mb-7_625rem {
+            margin-bottom: 7.625rem;
+        }
+
+        .bi-mt-25px {
+            margin-top: 25px;
+        }
+
+        .bi-mt-0_375rem {
+            margin-top: 0.375rem;
+        }
+
+        .bi-mt-0_5rem {
+            margin-top: 0.5rem;
+        }
+
+        .bi-mt-0_75rem {
+            margin-top: 0.75rem;
+        }
+
+        .bi-mt-1_125rem {
+            margin-top: 1.125rem;
+        }
+
+        .bi-mt-1_25rem {
+            margin-top: 1.25rem;
+        }
+
+        .bi-mt-1_625rem {
+            margin-top: 1.625rem;
+        }
+
+        .bi-mt-1rem {
+            margin-top: 1rem;
+        }
+
+        .bi-mt-2rem {
+            margin-top: 2rem;
+        }
+
+        .bi-mt-2_188rem {
+            margin-top: 2.188rem;
+        }
+
+        .bi-mt-2_5rem {
+            margin-top: 2.5rem;
+        }
+
+        .bi-mt-3rem {
+            margin-top: 3rem;
+        }
+
+        .bi-mt-3_25rem {
+            margin-top: 3.25rem;
+        }
+
+        .bi-mt-3_875rem {
+            margin-top: 3.875rem;
+        }
+
+        .bi-mt-4_063rem {
+            margin-top: 4.063rem;
+        }
+
+        .bi-mt-5rem {
+            margin-top: 5rem;
+        }
+
+        .bi-mt-6_563rem {
+            margin-top: 6.563rem;
+        }
+
+        .bi-mt-8rem {
+            margin-top: 8rem;
+        }
+
+        .bi-m-0 {
+            margin: 0;
+        }
+
+        .bi-mt-0 {
+            margin-top: 0;
+        }
+
+        .bi-mr-0 {
+            margin-right: 0;
+        }
+
+        .bi-mr-0_5rem {
+            margin-right: 0.5rem;
+        }
+
+        .bi-mr-1_875rem {
+            margin-right: 1.875rem;
+        }
+
+        .bi-mr-6_25rem {
+            margin-right: 6.25rem;
+        }
+
+        .bi-ml-0 {
+            margin-left: 0;
+        }
+
+        .bi-ml-0_5rem {
+            margin-left: 0.5rem;
+        }
+
+        .bi-ml-0_75rem {
+            margin-left: 0.75rem;
+        }
+
+        .bi-ml-1rem {
+            margin-left: 1rem;
+        }
+
+        .bi-ml-15px {
+            margin-left: 15px;
+        }
+
+        .bi-m-auto {
+            margin: auto;
+        }
+
+        .bi-mx-auto {
+            margin: auto 0;
+        }
+
+        .bi-my-auto {
+            margin: 0 auto;
+        }
+
+        .bi-mt-auto {
+            margin-top: auto;
+        }
+
+        .bi-mr-auto {
+            margin-right: auto;
+        }
+
+        .bi-mb-auto {
+            margin-bottom: auto;
+        }
+
+        .bi-ml-auto {
+            margin-left: auto;
+        }
+
+        .bi-p-x20px-y {
+            padding: 20px 0;
+        }
+
+        .bi-p-x-y20px {
+            padding: 0 20px;
+        }
+
+        .bi-pb-25px {
+            padding-bottom: 25px;
+        }
+
+        .bi-pt-25px {
+            padding-top: 25px;
+        }
+
+        .bi-p-0 {
+            padding: 0;
+        }
+
+        .bi-pt-0 {
+            padding-top: 0;
+        }
+
+        .bi-pr-0 {
+            padding-right: 0;
+        }
+
+        .bi-pr-0_5rem {
+            padding-right: 0.5rem;
+        }
+
+        .bi-pr-1rem {
+            padding-right: 1rem;
+        }
+
+        .bi-pb-0 {
+            padding-bottom: 0;
+        }
+
+        .bi-pl-0 {
+            padding-left: 0;
+        }
+
+        .bi-pl-0_5rem {
+            padding-left: 0.5rem;
+        }
+
+        /***** ===== Margin And Padding Style End ===== *****/
+
+        /**
+        =================================================
+        Image Style Begin
+        =================================================
+        +*/
+
+        .bi-img-full {
+            height: 100%;
+            width: 100%;
+        }
+
+        .bi-img-header {
+            width: 100%;
+            height: 70%;
+        }
+
+        .bi-img-w-100 {
+            width: 100%;
+        }
+
+        .bi-img-h-100 {
+            height: 100%;
+        }
+
+        .bi-img-cover {
+            object-fit: cover;
+        }
+
+        .bi-img-contain {
+            object-fit: contain;
+        }
+
+        .bi-img-logo {
+            width: 30%;
+        }
+
+        /***** ===== Image Style End ===== *****/
+        /**
+        =================================================
+        Table Style Begin
+        =================================================
+        +*/
+
+        .bi-table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        .bi-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            font-family: var(--bi-font-family-oakes-grotesk-bold);
+            /*margin-bottom: 1rem;*/
+            /*background-color: transparent;*/
+        }
+
+        /*.bi-table th,*/
+        /*.bi-table td {*/
+        /*    padding: 0.75rem;*/
+        /*    vertical-align: top;*/
+        /*}*/
+
+        .bi-table th {
+            width: 11.938rem;
+            color: var(--bi-gray-3);
+            font-size: 0.813rem;
+            font-family: var(--bi-font-family-oakes-grotesk-regular);
+            padding-bottom: 0.5rem;
+            padding-right: 3rem;
+            white-space: nowrap;
+        }
+
+        .bi-table th:nth-child(3),
+        .bi-table td:nth-child(3) {
+            padding-left: 3.8rem;
+        }
+
+        .bi-table td {
+            padding-bottom: 1.75rem;
+            padding-right: 3rem;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .bi-table th:last-child,
+        .bi-table tr td:last-child {
+            padding-right: 0;
+        }
+
+        /***** ===== Table Style End ===== *****/
+
+        .bi-fw-400 {
+            font-family: var(--bi-font-family-oakes-grotesk-regular);
+        }
+
+        .bi-fw-500 {
+            font-family: var(--bi-font-family-oakes-grotesk-medium);
+        }
+
+        .bi-fw-600 {
+            font-family: var(--bi-font-family-oakes-grotesk-bold);
+        }
+
+        .bi-fw-700 {
+            font-family: var(--bi-font-family-oakes-grotesk-semi-bold);
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+            height: 297mm;
+            width: 210mm;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        main {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;
+            justify-content: center;
+            align-content: center; */
+        }
+
+        .bi-bloom-title {
+            font-size: 1.938rem;
+            line-height: 2.25rem;
+        }
+
+        .bi-text-center {
+            text-align: center;
+        }
+
+        .bi-text-italic {
+            font-style: italic;
+        }
+
+        .bi-text-underline {
+            text-decoration: underline;
+        }
+
+        .bi-color-primary {
+            color: var(--bi-primary);
+        }
+
+        .bi-product-details li {
+            list-style-type: disc;
+            padding-bottom: 1rem;
+            font-family: var(--bi-font-family-oakes-grotesk-regular);
+
+        }
+
+        .bi-product-details {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            background-color: #8a8a8aff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="bi-mb-1rem">
+
+            <h3 class="bi-fw-600 bi-text-underline">
+                INFORMATIONS SUR LE PROSPECT
+            </h3>
+
+            <table class="bi-table bi-table-responsive">
+
+                <tr>
+
+                    <td class="bi-fw-600">Prospect:</td>
+
+                    <td class="bi-fw-400">Nom du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Adresse:</td>
+
+                    <td class="bi-fw-400">Adresse du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Téléphone:</td>
+
+                    <td class="bi-fw-400">Téléphone du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Email:</td>
+
+                    <td class="bi-fw-400">Mail du client</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <h3 class="bi-fw-600 bi-text-underline">
+                INFORMATIONS SUR LE RISQUE A ASSURER
+            </h3>
+
+            <table class="bi-table bi-table-responsive">
+
+                <tr>
+
+                    <td class="bi-fw-600">Prospect:</td>
+
+                    <td class="bi-fw-400">Nom du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Adresse:</td>
+
+                    <td class="bi-fw-400">Adresse du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Téléphone:</td>
+
+                    <td class="bi-fw-400">Téléphone du client</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Email:</td>
+
+                    <td class="bi-fw-400">Mail du client</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <h3 class="bi-fw-600 bi-text-underline">
+                GARANTIES ACCORDÉES
+            </h3>
+
+            <ul class="bi-product-details">
+
+                <li>
+                    XXXXXXXXXXXXXXXX
+                </li>
+
+                <li>
+                    XXXXXXXXXXXXXXXX
+                </li>
+
+                <li>
+                    XXXXXXXXXXXXXXXX
+                </li>
+
+                <li>
+                    XXXXXXXXXXXXXXXX
+                </li>
+
+            </ul>
+
+            <p class="bi-fw-400">
+                Conformément au tableau de garantie ci-dessous.
+            </p>
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <h3 class="bi-fw-600 bi-text-underline">
+                DÉCOMPTE DE PRIME
+            </h3>
+
+            <p class="bi-fw-400 bi-text-italic">
+                La prime annuelle TTC est fixée à F CFA XXXXX suivant le décompte ci-après :
+            </p>
+
+            <table class="bi-table bi-table-responsive">
+
+                <tr>
+
+                    <td class="bi-fw-600">Prime Nette:</td>
+
+                    <td class="bi-fw-400">XXXXXX CFA</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Accessoires:</td>
+
+                    <td class="bi-fw-400">XXXXXX CFA</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Taxes:</td>
+
+                    <td class="bi-fw-400">XXXXXX CFA</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="bi-fw-600">Prime TTC:</td>
+
+                    <td class="bi-fw-400">XXXXXX CFA</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
