@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -399,6 +399,63 @@
         }
 
         /***** ===== Image Style End ===== *****/
+        /**
+        =================================================
+        Table Style Begin
+        =================================================
+        +*/
+
+        .bi-table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        .bi-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            font-family: var(--bi-font-family-oakes-grotesk-bold);
+            /*margin-bottom: 1rem;*/
+            /*background-color: transparent;*/
+        }
+
+        /*.bi-table th,*/
+        /*.bi-table td {*/
+        /*    padding: 0.75rem;*/
+        /*    vertical-align: top;*/
+        /*}*/
+
+        .bi-table th {
+            width: 11.938rem;
+            color: var(--bi-gray-3);
+            font-size: 0.813rem;
+            font-family: var(--bi-font-family-oakes-grotesk-regular);
+            padding-bottom: 0.5rem;
+            padding-right: 3rem;
+            white-space: nowrap;
+        }
+
+        .bi-table th:nth-child(3),
+        .bi-table td:nth-child(3) {
+            padding-left: 3.8rem;
+        }
+
+        .bi-table td {
+            padding-bottom: 1.75rem;
+            padding-right: 3rem;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .bi-table th:last-child,
+        .bi-table tr td:last-child {
+            padding-right: 0;
+        }
+
+        /***** ===== Table Style End ===== *****/
 
         .bi-fw-400 {
             font-family: var(--bi-font-family-oakes-grotesk-regular);
@@ -452,8 +509,33 @@
             text-align: center;
         }
 
+        .bi-text-italic {
+            font-style: italic;
+        }
+
+        .bi-text-underline {
+            text-decoration: underline;
+        }
+
         .bi-color-primary {
             color: var(--bi-primary);
+        }
+
+        .bi-product-details li {
+            list-style-type: disc;
+            padding-bottom: 1rem;
+            font-family: var(--bi-font-family-oakes-grotesk-regular);
+
+        }
+
+        .bi-product-details {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
         }
 
         footer {
@@ -481,18 +563,18 @@
     <main>
 
         <h1 class="bi-bloom-title bi-color-primary bi-text-center bi-fw-600">
-            PROPOSITION D'ASSURANCE $produc_name$
+            PROPOSITION D'ASSURANCE $product_name$
         </h1>
 
         <h2 class="bi-text-center bi-fw-500">
-            Pour la Société $fisrt_name$ $last_name$
+            Pour la Société $name$
         </h2>
 
     </main>
 
     <footer class="bi-pt-25px bi-pb-25px">
 
-        <p>
+        <p class="bi-fw-400">
             $mois$ - $année$
         </p>
 
