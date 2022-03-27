@@ -1,70 +1,33 @@
-/**
-=================================================
-import google fonts
-=================================================
-+*/
+.pagebreak {
+    page-break-before: always;
+}
 
 @font-face {
     font-family: "Oakes Grotesk Regular";
-    src: url("../fonts/oakes_grotesk/Oakes-Grotesk-Regular.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/reportings/fonts/oakes_grotesk/Oakes-Grotesk-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Medium";
-    src: url("../fonts/oakes_grotesk/Oakes-Grotesk-Medium.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/reportings/fonts/oakes_grotesk/Oakes-Grotesk-Medium.ttf") format("truetype");
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Bold";
-    src: url("../fonts/oakes_grotesk/Oakes-Grotesk-Bold.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/reportings/fonts/oakes_grotesk/Oakes-Grotesk-Bold.ttf") format("truetype");
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Semi Bold";
-    src: url("../fonts/oakes_grotesk/Oakes-Grotesk-SemiBold.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/reportings/fonts/oakes_grotesk/Oakes-Grotesk-SemiBold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
-}
-
-:root {
-    --bi-primary: #043590;
-    --bi-primary-rgb: 4, 53, 144;
-    --bi-primary-light: #5791ff;
-    --bi-primary-light-rgb: 87, 145, 255;
-    --bi-primary-dark: #042C78;
-    --bi-primary-dark-rgb: 4, 44, 120;
-    --bi-black-default: #000;
-    --bi-black-default-rgb: 0, 0, 0;
-    --bi-white-default: #fff;
-    --bi-white-default-rgb: 255, 255, 255;
-    --bi-black: #181818;
-    --bi-black-rgb: 24, 24, 24;
-    --bi-success: #00AD5A;
-    --bi-success-rgb: 0, 173, 90;
-    --bi-gray-1: #7E7E7E;
-    --bi-gray-1-rgb: 126, 126, 126;
-    --bi-gray-2: #8A8A8A;
-    --bi-gray-2-rgb: 138, 138, 138;
-    --bi-gray-3: #636363;
-    --bi-gray-3-rgb: 99, 99, 99;
-    --bi-grey: #E8E8E8;
-    --bi-grey-rgb: 232, 232, 232;
-    --bi-alert: #AD0000;
-    --bi-alert-rgb: 173, 0, 0;
-    --bi-alert-dark: #750909;
-    --bi-alert-dark-rgb: 117, 9, 9;
-    --bi-cross-hover: #F5F5F5;
-    --bi-cross-active: #E8E8E9;
-    --bi-font-family-oakes-grotesk-regular: "Oakes Grotesk Regular", "sans-serif";
-    --bi-font-family-oakes-grotesk-medium: "Oakes Grotesk Medium", "sans-serif";
-    --bi-font-family-oakes-grotesk-bold: "Oakes Grotesk Bold", "sans-serif";
-    --bi-font-family-oakes-grotesk-semi-bold: "Oakes Grotesk Semi Bold", "sans-serif";
 }
 
 /**
@@ -76,6 +39,7 @@ Margin And Padding Style Begin
 .bi-m-x20px-y {
     margin: 20px 0;
 }
+
 
 .bi-m-x-y20px {
     margin: 0 20px;
@@ -359,8 +323,9 @@ Image Style Begin
 +*/
 
 .bi-img-full {
-    height: 100%;
+    height: 63%;
     width: 100%;
+    object-fit: cover;
 }
 
 .bi-img-header {
@@ -395,44 +360,25 @@ Table Style Begin
 =================================================
 +*/
 
-.bi-table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
 .bi-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 1rem;
-    font-family: var(--bi-font-family-oakes-grotesk-bold);
+    font-family: "Oakes Grotesk Bold", "sans-serif";
     /*border: 1px solid black;
     margin-bottom: 1rem;*/
     /*background-color: transparent;*/
 }
 
-/*.bi-table th,*/
-/*.bi-table td {*/
-/*    padding: 0.75rem;*/
-/*    vertical-align: top;*/
-/*}*/
-
 .bi-table th {
     width: 11.938rem;
-    color: var(--bi-gray-3);
+    color: #636363;
     font-size: 0.813rem;
-    font-family: var(--bi-font-family-oakes-grotesk-regular);
+    font-family: "Oakes Grotesk Regular", "sans-serif";
     padding-bottom: 0.5rem;
     padding-right: 3rem;
     white-space: nowrap;
 }
-
-/* .bi-table th:nth-child(3),
-.bi-table td:nth-child(3) {
-    padding-left: 3.8rem;
-} */
 
 .bi-table td {
     padding-top: 1rem;
@@ -442,7 +388,7 @@ Table Style Begin
     white-space: nowrap;
 }
 
-.bi-table-border{
+.bi-table-border {
 
     border: 1px solid black;
 }
@@ -455,28 +401,25 @@ Table Style Begin
 /***** ===== Table Style End ===== *****/
 
 .bi-fw-400 {
-    font-family: var(--bi-font-family-oakes-grotesk-regular);
+    font-family: "Oakes Grotesk Regular", "sans-serif";
 }
 
 .bi-fw-500 {
-    font-family: var(--bi-font-family-oakes-grotesk-medium);
+    font-family: "Oakes Grotesk Medium", "sans-serif";
 }
 
 .bi-fw-600 {
-    font-family: var(--bi-font-family-oakes-grotesk-bold);
+    font-family: "Oakes Grotesk Bold", "sans-serif";
 }
 
 .bi-fw-700 {
-    font-family: var(--bi-font-family-oakes-grotesk-semi-bold);
+    font-family: "Oakes Grotesk Semi Bold", "sans-serif";
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
-    height: 297mm;
-    width: 210mm;
 }
 
 header {
@@ -485,20 +428,18 @@ header {
     align-items: center;
     justify-content: center;
     align-content: center;
+    text-align: center
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center;
-    align-content: center; */
 }
 
 .bi-bloom-title {
-    font-size: 1.938rem;
+    font-size: 2.5rem;
     line-height: 2.25rem;
 }
 
@@ -519,13 +460,13 @@ main {
 }
 
 .bi-color-primary {
-    color: var(--bi-primary);
+    color: #043590;
 }
 
 .bi-product-details li {
     list-style-type: disc;
     padding-bottom: 1rem;
-    font-family: var(--bi-font-family-oakes-grotesk-regular);
+    font-family: "Oakes Grotesk Regular", "sans-serif";
 
 }
 
@@ -545,5 +486,6 @@ footer {
     align-items: center;
     justify-content: center;
     align-content: center;
+    text-align: center;
     background-color: #8a8a8aff;
 }
