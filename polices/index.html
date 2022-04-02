@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <style>
+        /**
+        =================================================
+        Import google fonts
+        =================================================
+        +*/
+
+        @font-face {
+            font-family: "Oakes Grotesk Regular";
+            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Medium";
+            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Medium.ttf") format("truetype");
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Bold";
+            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Bold.ttf") format("truetype");
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Oakes Grotesk Semi Bold";
+            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-SemiBold.ttf") format("truetype");
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            margin: auto;
+            height: 297mm;
+            width: 210mm;
+        }
+    </style>
+
+    <title>Police</title>
+
+</head>
+
+<body>
+
+<header>
+
+    <img class="bi-img-header bi-mb-2rem" src="https://ressources.bloom.bj/reportings/images/header-images.svg">
+
+    <img class="bi-img-logo" src="https://ressources.bloom.bj/reportings/images//bloom_insurance_logo.png"
+         alt="Entete de la page 1 de la proposition">
+
+</header>
+
+<main>
+
+    <h1 class="bi-bloom-title bi-color-primary bi-text-center bi-fw-600">
+        PROPOSITION D'ASSURANCE $product_name$
+    </h1>
+
+    <h2 class="bi-text-center bi-fw-500">
+        Pour la $reason$ $name$
+    </h2>
+
+</main>
+
+<footer class="bi-pt-25px bi-pb-25px">
+
+    <p class="bi-fw-400">
+        $mois$ - $année$
+    </p>
+
+</footer>
+
+<main>
+
+    <div class="bi-mb-1rem">
+
+        <h3 class="bi-fw-600 bi-text-underline">
+            INFORMATIONS SUR LE PROSPECT
+        </h3>
+
+        <table class="bi-table bi-table-responsive">
+
+            <tr>
+
+                <td class="bi-fw-600">Prospect:</td>
+
+                <td class="bi-fw-400">$customer_info.first_name$ $customer_info.last_name$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Adresse:</td>
+
+                <td class="bi-fw-400">$customer_info.address$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Téléphone:</td>
+
+                <td class="bi-fw-400">$customer_info.phone_number$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Email:</td>
+
+                <td class="bi-fw-400">$customer_info.email$</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <h3 class="bi-fw-600 bi-text-underline">
+            INFORMATIONS SUR LE RISQUE A ASSURER
+        </h3>
+
+        <table class="bi-table bi-table-responsive">
+
+            <tr>
+
+                <td class="bi-fw-600">Situation du risque:</td>
+
+                <td class="bi-fw-400">$risk_info.$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Qualité de l'assuré:</td>
+
+                <td class="bi-fw-400">$risk_info.$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Nature du risque:</td>
+
+                <td class="bi-fw-400">$risk_info.$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Voisinage:</td>
+
+                <td class="bi-fw-400">$risk_info.$</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Gardiennage :</td>
+
+                <td class="bi-fw-400">$risk_info.$</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <h3 class="bi-fw-600 bi-text-underline">
+            GARANTIES ACCORDÉES
+        </h3>
+
+        <ul class="bi-product-details">
+
+            <li>
+                XXXXXXXXXXXXXX
+            </li>
+
+            <li>
+                XXXXXXXXXXXXXX
+            </li>
+
+            <li>
+                XXXXXXXXXXXXXX
+            </li>
+
+            <li>
+                XXXXXXXXXXXXXX
+            </li>
+
+        </ul>
+
+        <p class="bi-fw-400">
+            Conformément au tableau de garantie ci-dessous.
+        </p>
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <h3 class="bi-fw-600 bi-text-underline">
+            DÉCOMPTE DE PRIME
+        </h3>
+
+        <p class="bi-fw-400 bi-text-italic">
+            La prime annuelle TTC est fixée à F CFA XXXXX suivant le décompte ci-après :
+        </p>
+
+        <table class="bi-table bi-table-responsive">
+
+            <tr>
+
+                <td class="bi-fw-600">Prime Nette:</td>
+
+                <td class="bi-fw-400">XX.XXX CFA</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Accessoires:</td>
+
+                <td class="bi-fw-400">XX.XXX CFA</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Taxes:</td>
+
+                <td class="bi-fw-400">XX.XXX CFA</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-600">Prime TTC:</td>
+
+                <td class="bi-fw-400">XX.XXX CFA</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</main>
+
+<main>
+
+    <div class="bi-mb-1rem">
+
+        <h3 class="bi-fw-600 bi-text-underline">
+            TABLEAU DE GARANTIE
+        </h3>
+
+        <table class="bi-table bi-table-responsive bi-mb-2rem">
+
+            <tr>
+
+                <td class="bi-fw-600 bi-table-border">Désignations des garanties</td>
+
+                <td class="bi-fw-600 bi-table-border">Capitaux assurés</td>
+
+                <td class="bi-fw-600 bi-table-border">Franchises</td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="3" class="bi-fw-600 bi-table-border">Incendie et événements assimilés</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+            <tr>
+
+                <td class="bi-fw-400 bi-table-border">Bâtiments</td>
+
+                <td class="bi-fw-400 bi-table-border">XX.XXX</td>
+
+                <td class="bi-fw-400 bi-table-border">Néant</td>
+
+            </tr>
+
+        </table>
+
+        <p class="bi-fw-400 bi-mb-2rem">
+
+            Cette proposition reste valable pour une période de 90 jours et est sous réserve de visite de risque ou
+            d'éventuels modifications du risque.
+
+        </p>
+
+        <p class="bi-fw-400 bi-text-right bi-mb-2rem">
+
+            Fait à Cotonou, le date mois année
+
+        </p>
+
+
+        <p class="bi-fw-400 bi-text-right bi-mb-2rem">
+
+            <img src="" alt="Signature">
+
+        </p>
+
+        <p class="bi-fw-600 bi-text-right bi-text-italic bi-mb-2rem">
+
+            Ekoue KANGNI
+
+        </p>
+
+    </div>
+
+</main>
+
+<header>
+
+    <img class="bi-img-header bi-mb-2rem" src="https://ressources.bloom.bj/reportings/images/header-images.svg"
+         alt="Entete de la page 1 de la proposition">
+
+    <img class="bi-img-logo" src="https://ressources.bloom.bj/reportings/images//bloom_insurance_logo.png"
+         alt="Entete de la page 1 de la proposition">
+
+</header>
+
+<main>
+
+    <h1 class="bi-bloom-title bi-color-primary bi-text-center bi-fw-600">
+        DESCRIPTION DES GARANTIES $product_name$
+    </h1>
+
+</main>
+
+<footer class="bi-pt-25px bi-pb-25px">
+
+    <p class="bi-fw-400">
+        $mois$ - $année$
+    </p>
+
+</footer>
+
+<main>
+
+    <div class="bi-mb-2rem bi-mt-1rem">
+
+        <div class="bi-bloom-title bi-fw-700 bi-text-center">POURQUOI CHOISIR NOTRE ASSURANCE $product_name$ ?</div>
+
+    </div>
+
+    <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+        Parce que protéger votre activité est essentiel quel que soit votre métier, votre assurance Multirisque
+        professionnelle vous apporte des garanties modulables au plus près de vos besoins. Ainsi, vous assurez vos
+        locaux, vos matériels, vos marchandises et vos installations, tout en garantissant la pérennité de votre
+        entreprise.
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <div class="bi-fw-600 bi-mb-0_25rem">Des garanties modulables</div>
+
+        <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+            Pour vous protéger au mieux selon vos besoins sans peser sur votre budget, grâce à des tarifs clairs et
+            compétitifs.
+
+        </div>
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <div class="bi-fw-600 bi-mb-0_25rem">Votre responsabilité récompensée</div>
+
+        <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+            Adoptez des mesures de prévention pour bénéficier d’une réduction de votre prime.
+
+        </div>
+
+    </div>
+
+    <div class="bi-mb-1rem">
+
+        <div class="bi-bloom-title bi-fw-700 bi-text-center">ZOOM SUR NOS GARANTIES</div>
+
+    </div>
+
+
+    <div class="bi-mb-1rem">
+
+        <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+            Notre offre couvre de base les principaux risques auxquels votre activité est exposée (incendie,
+            explosion, vandalisme, événements climatiques, catastrophes naturelles, dommages électriques, vol,
+            tous risques informatiques) et propose en option des garanties créées pour vous, comme la Garantie
+            dommage en tous lieux pour les appareils informatiques.
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <div class="bi-fw-600 bi-mb-0_25rem bi-fos-1_25rem">Incendie, explosion et vandalisme</div>
+
+            <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+                Nous vous protégeons contre le vandalisme et contre les dégâts causés à vos locaux
+                professionnels par les incendies, les explosions, les implosions, la fumée, la foudre et le
+                vandalisme.
+
+            </div>
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <div class="bi-fw-600 bi-mb-0_25rem bi-fos-1_25rem">Garantie automatique des investissements</div>
+
+            <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+                Bâtiments, mobiliers ou matériels, nous couvrons automatiquement la prise de valeur due à
+                l'acquisition, la location ou l'adjonction de nouveaux biens, qui pourrait intervenir entre deux
+                échéances.
+
+            </div>
+
+        </div>
+
+        <div class="bi-mb-1rem">
+
+            <div class="bi-fw-600 bi-mb-0_25rem bi-fos-1_25rem">Perte d’exploitation, perte de revenus</div>
+
+            <div class="bi-mb-2rem bi-fw-400 bi-text-line-height bi-text-justify">
+
+                Nous assurons la pérennité de votre chiffre d’affaires en cas de pertes financières suite à un
+                dommage matériel garanti tel qu’un incendie ou un bris de machine. Nous prenons aussi en charge
+                les frais fixes et compensons la perte de bénéfices.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+
+</html>
