@@ -513,7 +513,7 @@ main {
 }
 
 .bi-bloom-special-conditions {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     line-height: 2.25rem;
     border: 5px solid var(--bi-primary);
 }
@@ -544,16 +544,23 @@ main {
 
 .bi-product-details li {
     list-style-type: disc;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     font-family: var(--bi-font-family-oakes-grotesk-regular);
 
+}
+
+ol{
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    padding-bottom: 1rem;
+    font-family: var(--bi-font-family-oakes-grotesk-regular);
 }
 
 .bi-product-details {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
