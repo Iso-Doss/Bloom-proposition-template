@@ -400,6 +400,11 @@ Image Style Begin
     align-items: center;
 }
 
+.bi-img-logo-quittance-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 /***** ===== Image Style End ===== *****/
 /**
 =================================================
@@ -520,6 +525,18 @@ main {
 
 .bi-bloom-paragraph-begin{
     padding-left: 10%;
+}
+
+.bi-bloom-quittance{
+    font-size: 1.5em;
+    border: 2px solid black;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem ;
+}
+
+.bi-bloom-general-info-container{
+    display: flex;
+
 }
 
 .bi-text-center {
