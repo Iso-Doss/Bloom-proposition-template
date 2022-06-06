@@ -405,6 +405,22 @@ Image Style Begin
     justify-content: flex-end;
 }
 
+.bi-fos-1_25rem {
+    font-size: 1.25rem;
+}
+
+.bi-fos-1_5rem {
+    font-size: 1.5rem;
+}
+
+.bi-fos-2rem {
+    font-size: 2rem;
+}
+
+.bi-fos-2_5rem {
+    font-size: 2.5rem;
+}
+
 /***** ===== Image Style End ===== *****/
 /**
 =================================================
