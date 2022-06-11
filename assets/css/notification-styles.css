@@ -6,28 +6,28 @@ Import google fonts
 
 @font-face {
     font-family: "Oakes Grotesk Regular";
-    src: url("https://ressources.bloom.bj/reportings/fonts/Oakes-Grotesk-Regular.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/fonts/Oakes-Grotesk-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Medium";
-    src: url("https://ressources.bloom.bj/reportings/fonts/Oakes-Grotesk-Medium.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/fonts/Oakes-Grotesk-Medium.ttf") format("truetype");
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Bold";
-    src: url("https://ressources.bloom.bj/reportings/fonts/Oakes-Grotesk-Bold.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/fonts/Oakes-Grotesk-Bold.ttf") format("truetype");
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Oakes Grotesk Semi Bold";
-    src: url("https://ressources.bloom.bj/reportings/fonts/Oakes-Grotesk-SemiBold.ttf") format("truetype");
+    src: url("https://ressources.bloom.bj/fonts/Oakes-Grotesk-SemiBold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
 }
