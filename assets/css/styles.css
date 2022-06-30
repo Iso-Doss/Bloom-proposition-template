@@ -310,6 +310,14 @@ Margin And Padding Style Begin
     padding: 0 20px;
 }
 
+.bi-pb-10px {
+    padding-bottom: 10px;
+}
+
+.bi-pt-10px {
+    padding-top: 10px;
+}
+
 .bi-pb-25px {
     padding-bottom: 25px;
 }
@@ -394,13 +402,13 @@ Image Style Begin
     object-fit: contain;
 }
 
-.bi-img-logo-container{
+.bi-img-logo-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-.bi-img-logo-quittance-container{
+.bi-img-logo-quittance-container {
     display: flex;
     justify-content: flex-end;
 }
@@ -457,9 +465,7 @@ Table Style Begin
 }
 
 .bi-table td {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3rem;
+    padding: 0.5rem 3rem 0.5rem 0.5em;
     vertical-align: top;
     white-space: nowrap;
 }
@@ -474,7 +480,7 @@ Table Style Begin
     padding-right: 0;
 }
 
-.bi-table td p{
+.bi-table td p {
     margin-block-start: 0em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -539,18 +545,18 @@ main {
     border: 5px solid var(--bi-primary);
 }
 
-.bi-bloom-paragraph-begin{
+.bi-bloom-paragraph-begin {
     padding-left: 10%;
 }
 
-.bi-bloom-quittance{
+.bi-bloom-quittance {
     font-size: 1.5em;
     border: 2px solid black;
-    padding-top: 0.5rem ;
-    padding-bottom: 0.5rem ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.bi-bloom-general-info-container{
+.bi-bloom-general-info-container {
     display: flex;
 
 }
@@ -582,7 +588,7 @@ main {
 
 }
 
-ol{
+ol {
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
     padding-bottom: 1rem;
@@ -609,11 +615,11 @@ footer {
     color: white;
 }
 
-.bi-text-line-height{
+.bi-text-line-height {
     line-height: 30px;
 }
 
-.bi-text-justify{
+.bi-text-justify {
     text-align: justify;
 }
 
@@ -621,6 +627,15 @@ footer {
     page-break-before: always;
 }
 
-.bi-link-hover:hover{
+.bi-link-hover:hover {
     text-decoration: underline;
+}
+
+.bi-page-a4 {
+    width: 210mm;
+    height: 279.4mm;
+}
+
+.bi-text-upper-case {
+    text-transform: uppercase;
 }
