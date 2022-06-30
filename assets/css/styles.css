@@ -639,3 +639,11 @@ footer {
 .bi-text-upper-case {
     text-transform: uppercase;
 }
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
