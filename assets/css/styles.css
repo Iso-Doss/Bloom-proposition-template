@@ -399,6 +399,10 @@ Image Style Begin
     width: 30%;
 }
 
+.bi-img-logo-manager_stamp {
+    width: 15%;
+}
+
 .bi-img-w-100 {
     width: 100%;
 }
@@ -522,7 +526,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f9f9f9;
+    margin: auto;
+    height: 297mm;
+    width: 210mm;
+    /*background-color: #f9f9f9;*/
 }
 
 header {
@@ -616,13 +623,13 @@ main {
     color: white;
 }
 
-.bi-link-hover:hover{
+.bi-link-hover:hover {
     text-decoration: underline;
 }
 
 .bi-product-details li {
     list-style-type: disc;
-    /*padding-bottom: 0.5rem;*/
+    padding-bottom: 0.2rem;
     font-family: var(--bi-font-family-oakes-grotesk-regular);
 
 }
@@ -721,4 +728,12 @@ p {
     background-color: var(--bi-primary);
     border-color: var(--bi-primary);
     color: var(--bi-white-default);
+}
+
+@media print {
+    .bi-page-break {
+        page-break-before: always;
+    }
+
+    /* page-break-after works, as well */
 }
