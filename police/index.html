@@ -9,51 +9,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://ressources.bloom.bj/css/pdf-styles.css">
 
-    <style>
-        /**
-        =================================================
-        Import google fonts
-        =================================================
-        +*/
-
-        @font-face {
-            font-family: "Oakes Grotesk Regular";
-            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Regular.ttf") format("truetype");
-            font-weight: 400;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Oakes Grotesk Medium";
-            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Medium.ttf") format("truetype");
-            font-weight: 500;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Oakes Grotesk Bold";
-            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-Bold.ttf") format("truetype");
-            font-weight: 600;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Oakes Grotesk Semi Bold";
-            src: url("../assets/fonts/oakes_grotesk/Oakes-Grotesk-SemiBold.ttf") format("truetype");
-            font-weight: 700;
-            font-display: swap;
-        }
-    </style>
-
-    <title>Police</title>
+    <title>Police d'assurance nom du produit d'assurance</title>
 
 </head>
 
 <body>
 
-<header>
+<div class="bi-page bi-page-space-between">
 
     <img class="bi-img-header bi-mb-1rem" src="https://ressources.bloom.bj/images/header-images.svg"
          alt="Entete de la page 1 de la proposition">
@@ -68,80 +32,76 @@
 
     </div>
 
-</header>
+    <div class="bi-bloom-special-conditions" style="padding: 20px">
 
-<main>
+        <h1 class="bi-bloom-title bi-text-center bi-fw-700 bi-bloom-product-name">
+            POLICE D'ASSURANCE $product_name$
+        </h1>
 
-    <h1 class="bi-bloom-title bi-text-center bi-fw-700">
-        POLICE D'ASSURANCE
-    </h1>
+        <table class="bi-table bi-table-responsive">
 
-    <h1 class="bi-bloom-title bi-text-center bi-bloom-product-name bi-fw-700">
-        $product_name$
-    </h1>
+            <tr>
 
-    <table class="bi-table bi-table-responsive">
+                <td class="bi-fw-600 bi-text-bold bi-fos-1_5rem">Police N°:</td>
 
-        <tr>
+                <td class="bi-fw-400">$police_number$</td>
 
-            <td class="bi-fw-600">Police N°:</td>
+            </tr>
 
-            <td class="bi-fw-400">$police_number$</td>
+            <tr>
 
-        </tr>
+                <td class="bi-fw-600 bi-text-bold bi-fos-1_5rem">Assuré:</td>
 
-        <tr>
+                <td class="bi-fw-400">
 
-            <td class="bi-fw-600">Assuré:</td>
+                    <p>$customer_info.first_name$ $customer_info.last_name$</p>
 
-            <td class="bi-fw-400">
+                    <p>$customer_info.address$</p>
 
-                <p>$customer_info.first_name$ $customer_info.last_name$</p>
+                </td>
 
-                <p>$customer_info.address$</p>
+            </tr>
 
-            </td>
+            <tr>
 
-        </tr>
+                <td class="bi-fw-600 bi-text-bold bi-fos-1_5rem">Assureur:</td>
 
-        <tr>
+                <td class="bi-fw-400">
 
-            <td class="bi-fw-600">Assureur:</td>
+                    <p>$insurer_info.name</p>
 
-            <td class="bi-fw-400">
+                    <p>$insurer_info.address$</p>
 
-                <p>$insurer_info.name</p>
+                </td>
 
-                <p>$insurer_info.address$</p>
+            </tr>
 
-            </td>
+        </table>
 
-        </tr>
+    </div>
 
-        <tr>
+</div>
 
-            <td class="bi-fw-600">Courtier:</td>
+<div class="bi-page-break"></div>
 
-            <td class="bi-fw-400">$courtier$</td>
-
-        </tr>
-
-    </table>
+<div>
 
     <h1 class="bi-bloom-title bi-bloom-special-conditions bi-color-primary bi-text-center bi-fw-700 bi-pt-25px bi-pb-25px">
         CONDITIONS PARTICULIÈRES
     </h1>
 
-    <p class="bi-fw-400">
-        Entre
-    </p>
+    <table class="bi-table bi-mt-1rem">
 
-    <table class="bi-table bi-table-responsive">
+        <tr>
+            <td colspan="2">Entre</td>
+        </tr>
 
         <tr>
 
-            <td class="bi-fw-600 bi-text-underline">
-                ASSUREUR:
+            <td class="bi-fw-600 bi-text-bold bi-fos-1_5rem">
+
+                Assureur:
+
             </td>
 
             <td class="bi-fw-400">
@@ -149,34 +109,24 @@
                 <p>$insurer_info.name</p>
 
                 <p>$insurer_info.address$</p>
-
-                <p>Ci-après dénommée l’ASSUREUR,</p>
 
             </td>
 
         </tr>
 
-    </table>
-
-    <p class="bi-fw-400">
-        Et
-    </p>
-
-    <table class="bi-table bi-table-responsive">
+        <tr>
+            <td colspan="2">Et</td>
+        </tr>
 
         <tr>
 
-            <td class="bi-fw-600 bi-text-underline">
-                ASSUREUR:
-            </td>
+            <td class="bi-fw-600 bi-text-bold bi-fos-1_5rem">SOUSCRIPTEUR:</td>
 
             <td class="bi-fw-400">
 
-                <p>$insurer_info.name</p>
+                <p>$subscriber_info.name</p>
 
-                <p>$insurer_info.address$</p>
-
-                <p>Ci-après dénommée l’ASSURÉ,</p>
+                <p>$subscriber_info.address$</p>
 
             </td>
 
@@ -454,6 +404,12 @@
 
     </table>
 
+</div>
+
+<div class="bi-page-break"></div>
+
+<div class="bi-page">
+
     <h1 class="bi-bloom-title bi-bloom-special-conditions bi-color-primary bi-text-center bi-fw-700 bi-pt-25px bi-pb-25px">
         PROCEDURE A SUIVRE EN CAS D’ACCIDENTS
     </h1>
@@ -526,7 +482,7 @@
 
     </ul>
 
-</main>
+</div>
 
 </body>
 
